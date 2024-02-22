@@ -1,0 +1,163 @@
+.servico{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; */
+    position: relative;
+    height: auto;
+}
+
+.bg-video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+.servico-container{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.864), rgb(0, 20, 8));
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+.servico-content{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.servico-content>p{
+    width: 30%;
+    margin-left: 5%;
+    color: #fff;
+    font-family: 'Space Grotesk';
+    text-align: justify;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.009);
+    box-shadow: 0 8px 32px 0 rgba(219, 219, 219, 0.099);
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.servico-container>h2{
+
+    font-family: 'Kode Mono';
+    color: rgb(0, 255, 81);
+    font-size: 50px;
+}
+
+.swiper {
+    width: 600px;
+    height: 400px;
+    
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    color: rgb(0, 255, 81)!important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: rgb(0, 255, 81);
+}
+.card-servico{
+    width: 250px;
+    height: 99%;
+    color: #fff;
+    font-family: 'Space Grotesk';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+
+    
+    box-shadow: 0 8px 32px 0 rgba(219, 219, 219, 0.099);
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.card-servico>h3{
+    font-family: 'Kode Mono';
+    color: rgb(0, 255, 81);
+    text-transform: capitalize;
+}
+.card-servico>p{
+    width: 100%;
+text-align: justify;
+    overflow-y: auto;
+    letter-spacing: 1.8px;
+    
+    word-break: break-all;
+}
+
+
+.slide-1{
+    background: 
+        linear-gradient(to top, rgba(0, 0, 0, 0.871), rgba(0, 0, 0, 0.921)),
+        url('../assets/img/reparos.jpg');
+}
+.slide-2{
+    background: 
+        linear-gradient(to top, rgba(0, 0, 0, 0.871), rgba(0, 0, 0, 0.921)),
+        url('../assets/img/limpeza-placa.jpg');
+}
+.slide-3{
+    background: 
+        linear-gradient(to top, rgba(0, 0, 0, 0.871), rgba(0, 0, 0, 0.921)),
+        url('../assets/img/teste-placa.jpg');
+}
+.slide-4{
+    background: 
+        linear-gradient(to top, rgba(0, 0, 0, 0.871), rgba(0, 0, 0, 0.921)),
+        url('../assets/img/hd.jpg');
+}
+.slide-5{
+    background: 
+        linear-gradient(to top, rgba(0, 0, 0, 0.871), rgba(0, 0, 0, 0.921)),
+        url('../assets/img/gabinete.jpg');
+}
+
+.slide-1,
+.slide-2,
+.slide-5{
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-position: center;
+}
+
+@media(max-width:1024px){
+    .servico-container> h2{
+        width: 100%;
+        text-align: center;
+    }
+    .servico-content{
+        flex-direction: column;
+        
+        width: 100%;
+        height: 90%;
+    }
+    .servico-content>p{
+        width: 80%;
+        margin-left: 0;
+    }
+    .swiper {
+        width: 90%;
+        height: 300px;
+        
+    }
+    .card-servico{
+        width: 90%;
+        height: 300px;
+    }
+}

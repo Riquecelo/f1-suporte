@@ -1,0 +1,28 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    background-color: rgb(0, 0, 0);
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgb(0,20,8), black); 
+}
+
+
+
+main section{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 100px);
+    
+}
+
+.contato,
+.sobre,
+.servico{
+    height: 100vh;
+    width: 100%;
+}

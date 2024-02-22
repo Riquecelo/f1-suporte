@@ -1,0 +1,71 @@
+
+.apresentacao{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 50%;
+}
+.apresentacao div .titulo{
+    width: 90%;
+    height: 30%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Kode Mono";
+    text-transform: uppercase;
+}
+.apresentacao div .titulo .color{
+    color: rgb(0, 255, 81);
+}
+.apresentacao div .titulo .transparente{
+    text-shadow: 
+    -0px -0px 0 rgba(251, 250, 250, 0.09),
+    0px -0px 0 rgb(255, 255, 255, 0.09), 
+    0px 0px 0 rgb(255, 255, 255, 0.09), 
+    -0px 0px 0 rgb(255, 255, 255, 0.09), 
+    -1px -1px 0 rgb(255, 255, 255, 0.09), 
+    1px -1px 0 rgb(255, 255, 255, 0.09), 
+    1px 1px 0 rgb(255, 255, 255, 0.09), 
+    -1px 1px 0 rgb(255, 255, 255, 0.09), 
+    -1px -1px 0 rgb(255, 255, 255, 0.09), 
+    1px -1px 0 rgb(255, 255, 255, 0.09), 
+    1px 1px 0 rgb(255, 255, 255, 0.09), 
+    -1px 1px 0 rgb(255, 255, 255, 0.09), 
+    0 1px 1px rgba(0, 0, 0, 0.213);
+
+    color: rgb(0,20,8);
+}
+
+.color, .transparente{
+    font-size: 80px;
+}
+
+@media(max-width:1024px){
+    #topo{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        background-image: linear-gradient(to top, rgb(0,20,8), black);
+    }
+}
+
+@media(max-width:768px){
+    .apresentacao div .titulo{
+        font-size: 20px;
+    }
+    .color, .transparente{
+        font-size: 60px;
+    }
+}
+@media(max-width:425px){
+    .apresentacao div .titulo{
+        font-size: 20px;
+    }
+    .color, .transparente{
+        font-size: 40px;
+    }
+}

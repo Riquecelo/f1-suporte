@@ -1,0 +1,56 @@
+.sobre{
+    background: 
+        linear-gradient(to bottom, rgb(0, 20, 8), rgba(0, 0, 0, 0.921)),
+        url('../assets/img/placa-mae.jpg');
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre h2{
+    font-family: 'Kode Mono';
+    color: rgb(0, 255, 81);
+    font-size: 50px;
+}
+
+.card-sobre{
+    width: 50%;
+    height: 30%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.009);
+    box-shadow: 0 8px 32px 0 rgba(219, 219, 219, 0.099);
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+}
+
+.card-content,
+.card-titulo{
+    color: #fff;
+    font-family: 'Space Grotesk';
+    
+}
+
+.card-titulo{
+    font-size: 26px;
+    text-transform: capitalize;
+    
+}
+.card-content{
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: justify;
+}
+
+@media(max-width:1024px){
+    .card-sobre{
+        width: 70%;
+        height: auto;
+    }
+}

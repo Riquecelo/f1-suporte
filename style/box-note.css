@@ -1,0 +1,79 @@
+
+.box-note{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.087);
+    border-radius: 10px;
+}
+
+.box-note .note{
+    width: 400px;
+    height: 450px;
+    
+}
+
+
+.utorrent,
+.zap,
+.game,
+.firefox,
+.ps,
+.adober,
+.team,
+.chrome{
+    position: absolute;
+}
+
+.utorrent{
+    top: 10%;
+    left: 20%;
+}
+.zap{
+    bottom: 15%;
+}
+.game{
+    top: 25%;
+}
+.firefox{
+    right: 30%;
+}
+.ps{
+    right: 7%;
+    top: 15%;
+}
+.adober{
+    left: 10%;
+}
+.team{
+    top: 40%;
+    right: 10%;
+}
+.chrome{
+    bottom: 40%;
+    left: 35%;
+}
+
+@media(max-width:1024px){
+    .box-note{
+        width: 70%;
+    }
+}
+
+@media(max-width:768px){
+    .box-note .note{
+        width: 400px;
+        min-width: 100px;
+        height: 450px;
+        min-height: 50px;
+    }
+}
+
+@media(max-width:425px){
+    .box-note{
+        width: 90%;
+    }
+}

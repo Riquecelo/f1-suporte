@@ -1,0 +1,66 @@
+.contato{
+    background-image: linear-gradient(to bottom, rgb(0,20,8), black);
+    display: flex;
+    flex-direction: column;justify-content: space-between;
+}
+
+.contato-content{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.contato-content>p{
+    width: 50%;
+    margin-right: 10%;
+    color: #fff;
+    font-family: 'Space Grotesk';
+    text-align: justify;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.009);
+    box-shadow: 0 8px 32px 0 rgba(219, 219, 219, 0.099);
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+footer{
+    height: 10%;
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Space Grotesk';
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.219);
+    
+}
+
+@media(max-width:1024px){
+    .contato-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contato-content>p{
+        margin-top: 100px;
+        margin-right: 0;
+        padding: 10px;
+        width: 90%;
+        height:auto;
+    }
+}
+@media(max-width:500px){
+    footer{
+        flex-direction: column;
+    }
+    footer p{
+        font-size: 12px;
+        text-align: center;
+    }
+}
